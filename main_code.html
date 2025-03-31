@@ -1,10 +1,12 @@
-<!DOCTYPE html><html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Университет Косыгина</title>
     <style>
         body {
+            background-color: black;
             margin: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
@@ -23,10 +25,43 @@
             margin: 0 60px;
             font-weight: bold;
         }
-        .banner {
-            padding: 200px 20px;
-            background-color: black;
+        .banner{
+            position: relative;
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            width: 80%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             color: white;
+            margin: 5vh auto;
+            border-radius: 50px;
+        }
+        .banner::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+        }
+        .banner h2{
+            position: relative;
+            z-index: 2;
+        }
+        .banner p{
+            position: relative;
+            z-index: 2;
+        }
+        .banner a{
+            position: relative;
+            z-index: 2;
         }
         .content h2 {
             margin: 20px 0;
@@ -34,6 +69,7 @@
         }
         .content p {
             font-size: 18px;
+            z-index: 2;
         }
         .button {
             display: inline-block;
@@ -51,28 +87,34 @@
             color: black;
             
         }
+        .section-black
+        {
+            padding: 200px 20px;
+            background-color: black;
+            color: white;
+        }
         .features {
-        background-color: white;
-        padding: 50px;
-        text-align: left;
-    }
-    .features-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    .feature {
-        background: #f8f8f8;
-        padding: 20px;
-        border-radius: 10px;
-    }
+            background-color: white;
+            padding: 50px;
+            text-align: left;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .feature {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="logo"><img src="C:\Users\Михаил\Documents\VS Code Projects\Univer_Project\University\images\__.png" alt=""/></div>
+        <div class="logo"><img src="images/__.png" alt=""/></div>
         <div class="menu">
             <a href="#">О программе</a>
             <a href="#">Об университете</a>
@@ -123,5 +165,5 @@
             </div>
         </div>
     </section>
-    </body>
-    </html>
+</body>
+</html>
