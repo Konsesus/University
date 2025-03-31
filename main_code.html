@@ -37,9 +37,9 @@
         }
         .button {
             display: inline-block;
-            background: greenyellow;
+            background-color: greenyellow;
             color: black;
-            padding: 18px 25px;
+            padding: 15px 25px;
             font-weight: bold;
             text-decoration: none;
             margin-top: 20px;
@@ -51,11 +51,28 @@
             color: black;
             
         }
+        .features {
+        background-color: white;
+        padding: 50px;
+        text-align: left;
+    }
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .feature {
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
+    }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="logo"><img src="C:\Users\av200\source\repos\University-main\images\__.png" alt=""/></div>
+        <div class="logo"><img src="C:\Users\av200\source\repos\University-main\images\\__.png" alt=""/></div>
         <div class="menu">
             <a href="#">О программе</a>
             <a href="#">Об университете</a>
@@ -64,9 +81,10 @@
         </div>
     </div>
     <div class="banner">
-        <div class="content" style="position: relative; display: inline-block;">
-            <img src="C:\Users\av200\source\repos\University-main\images\Background1.png">
-            <div style="position: absolute; top: 6%; left: 25%; color: white; font-size: 24px;">
+        <div style="position: relative; display: inline-block;">
+        <img src="C:\Users\av200\source\repos\University-main\images\Background1.png" alt="Фоновая картинка">
+        <div style="position: absolute; top: 6.7%; left: 25%; color: white; font-size: 24px;">
+        <div class="content">
             <h2><i><b>Институт информационных технологий и цифровой трансформации<br>РГУ им. А.Н. Косыгина</i></b></h2>
             <br />
             <br />
@@ -80,13 +98,35 @@
             <br />
             <br />
             <a href="#" class="button"><i>Стань абитуриентом уже сейчас!</i></a>
+        </div>
+    </div>
+</div>
+    </div>
+    <section class="features">
+        <h2 style="text-align: center;">4 важных особенности образовательной программы<br/><br/></h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3><i>Базовая и гибкая часть программы</i></h3>
+                <p><i><b>Программа состоит из двух частей:</i></b>
+                    <ul>
+                        <li><i><b>единой для всех студентов (базовой) части, которая готовит универсального ИТ-специалиста широкого профиля;</i></b></li>
+                        <li><i><b>гибкой части, изучение которой дает возможность работать по конкретным, часто встречающимся на сайтах, вакансиям и востребованным ИТ-профессиям.</i></b></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="feature">
+                <h3><i>Практика и проекты</i></h3>
+                <p><i><b>Большую роль в программе отводится не только обучению выполнять готовое техническое задание, но и формировать и "упаковывать" собственные идеи и проекты и даже стартапы. Для этого предусмотрена широкая программа взаимодействия с успешными ИТ-компаниями и стартапами в формате практик, хакатонов, мастер-классов и т. д.</i></b></p>
+            </div>
+            <div class="feature">
+                <h3><i>Возможность исправления выбора</i></h3>
+                <p><i><b>Окончательный выбор состава гибкой части происходит только в конце второго курса. К этому времени уже довольно точно определяются профессиональные интересы и потребности наших студентов.</i></b></p>
+            </div>
+            <div class="feature">
+                <h3></i>Быстрый вход в сферу ИТ</i></h3>
+                <p><i><b>Изучение ИТ-дисциплин на каждом семестре обучения, начиная уже с 1-го курса, играет решающую роль в формировании компетенций студентов.</i></b></p>
             </div>
         </div>
-    </div>
-    <div class="section>">
-        <div class="content">
-            <p style="font-size: xx-large; padding-top: 5%; padding-bottom: 5%;"><i><strong>4 важных особенности образовательной программы</strong></i></p>
-        </div>
-    </div>
-</body>
-</html>
+    </section>
+    </body>
+    </html>
