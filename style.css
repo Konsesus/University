@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-color: black;
     margin: 0;
@@ -13,6 +16,7 @@ body {
     text-align: left;
 }
 .menu a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     margin: 0 60px;
@@ -75,7 +79,8 @@ body {
     border-radius: 5px;
 }
 .section {
-    padding: 200px 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: white;
     color: black;
 }
@@ -105,4 +110,35 @@ body {
 .main-text{
     padding-bottom: 50px;
     text-align: center;
+}
+.fade-in {
+    opacity: 0; /* начальное значение непрозрачности */
+    animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 1.5s; /* длительность анимации в 1 секунду */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .displays {
+    background-color: white;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.display-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.display {
+    background: white;
+    border-radius: 10px;
 }
