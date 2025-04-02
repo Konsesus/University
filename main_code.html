@@ -1,78 +1,14 @@
-<!DOCTYPE html><html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Университет Косыгина</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
-        }
-        .header {
-            background-color: black;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: left;
-        }
-        .menu a {
-            color: white;
-            text-decoration: none;
-            margin: 0 60px;
-            font-weight: bold;
-        }
-        .banner {
-            padding: 200px 20px;
-            background-color: black;
-            color: white;
-        }
-        .content h2 {
-            margin: 20px 0;
-            font-size: 24px;
-        }
-        .content p {
-            font-size: 18px;
-        }
-        .button {
-            display: inline-block;
-            background-color: greenyellow;
-            color: black;
-            padding: 15px 25px;
-            font-weight: bold;
-            text-decoration: none;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        .section {
-            padding: 200px 20px;
-            background-color: white;
-            color: black;
-            
-        }
-        .features {
-        background-color: white;
-        padding: 50px;
-        text-align: left;
-    }
-    .features-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    .feature {
-        background: #f8f8f8;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <div class="logo"><img src="C:\Users\av200\source\repos\University-main\images\\__.png" alt=""/></div>
+        <div class="logo"><img src="images/__.png" style="pointer-events: none;" alt=""/></div>
         <div class="menu">
             <a href="#">О программе</a>
             <a href="#">Об университете</a>
@@ -81,9 +17,6 @@
         </div>
     </div>
     <div class="banner">
-        <div style="position: relative; display: inline-block;">
-        <img src="C:\Users\av200\source\repos\University-main\images\Background1.png" alt="Фоновая картинка">
-        <div style="position: absolute; top: 6.7%; left: 25%; color: white; font-size: 24px;">
         <div class="content">
             <h2><i><b>Институт информационных технологий и цифровой трансформации<br>РГУ им. А.Н. Косыгина</i></b></h2>
             <br />
@@ -100,33 +33,149 @@
             <a href="#" class="button"><i>Стань абитуриентом уже сейчас!</i></a>
         </div>
     </div>
-</div>
-    </div>
-    <section class="features">
-        <h2 style="text-align: center;">4 важных особенности образовательной программы<br/><br/></h2>
+    <section id="section-2" class="features">
+        <div class="main-text">
+            <h2>4 важных особенности образовательной программы</h2>
+        </div>
         <div class="features-grid">
             <div class="feature">
-                <h3><i>Базовая и гибкая часть программы</i></h3>
-                <p><i><b>Программа состоит из двух частей:</i></b>
+                <h3>Базовая и гибкая часть программы</h3>
+                <p>Программа состоит из двух частей:
                     <ul>
-                        <li><i><b>единой для всех студентов (базовой) части, которая готовит универсального ИТ-специалиста широкого профиля;</i></b></li>
-                        <li><i><b>гибкой части, изучение которой дает возможность работать по конкретным, часто встречающимся на сайтах, вакансиям и востребованным ИТ-профессиям.</i></b></li>
+                        <li>единой для всех студентов (базовой) части, которая готовит универсального ИТ-специалиста широкого профиля;</li>
+                        <li>гибкой части, изучение которой дает возможность работать по конкретным, часто встречающимся на сайтах, вакансиям и востребованным ИТ-профессиям.</li>
                     </ul>
                 </p>
             </div>
             <div class="feature">
-                <h3><i>Практика и проекты</i></h3>
-                <p><i><b>Большую роль в программе отводится не только обучению выполнять готовое техническое задание, но и формировать и "упаковывать" собственные идеи и проекты и даже стартапы. Для этого предусмотрена широкая программа взаимодействия с успешными ИТ-компаниями и стартапами в формате практик, хакатонов, мастер-классов и т. д.</i></b></p>
+                <h3>Практика и проекты</h3>
+                <p>Большую роль в программе отводится не только обучению выполнять готовое техническое задание, но и формировать и "упаковывать" собственные идеи и проекты и даже стартапы. Для этого предусмотрена широкая программа взаимодействия с успешными ИТ-компаниями и стартапами в формате практик, хакатонов, мастер-классов и т. д.</p>
             </div>
             <div class="feature">
-                <h3><i>Возможность исправления выбора</i></h3>
-                <p><i><b>Окончательный выбор состава гибкой части происходит только в конце второго курса. К этому времени уже довольно точно определяются профессиональные интересы и потребности наших студентов.</i></b></p>
+                <h3>Возможность исправления выбора</h3>
+                <p>Окончательный выбор состава гибкой части происходит только в конце второго курса. К этому времени уже довольно точно определяются профессиональные интересы и потребности наших студентов.</p>
             </div>
             <div class="feature">
-                <h3></i>Быстрый вход в сферу ИТ</i></h3>
-                <p><i><b>Изучение ИТ-дисциплин на каждом семестре обучения, начиная уже с 1-го курса, играет решающую роль в формировании компетенций студентов.</i></b></p>
+                <h3>Быстрый вход в сферу ИТ</h3>
+                <p>Изучение ИТ-дисциплин на каждом семестре обучения, начиная уже с 1-го курса, играет решающую роль в формировании компетенций студентов.</p>
             </div>
         </div>
     </section>
-    </body>
-    </html>
+    <div class="section-black">
+        <div class="main-text">
+            <h1>Базовая ИТ-Подготовка</h1>
+        </div>
+            <img src="images/table.png" style="position: center; width: 70%; height: 50%;" alt="">
+    </div>
+    <div class="section">
+        <div class="main-text">
+            <h1>Гибкая образовательная траектория</h1>
+        </div>
+        <p style="text-align: center; color: rgba(0, 0, 0, 0.5); font-size: larger;">В ходе обучения студенты сами определяют направления 
+            ИТ-индустрии, которые подходят<br/>для изучения именно им.</p>
+    </div>
+    <section class="displays">
+            <div class="display-grid" style="vertical-align: middle;">
+                <img src="images/data-circle.jpg" alt="">
+                <div style="text-align: left;" class="display">
+                    <p class="fade-in">Из набора 9 востребованных профессий огромной ИТ-индустрии студенты выбирают 3 профессиональных модуля, расставляя приоритеты для каждой профессии.</p>
+                    <p class="fade-in">Два профессиональных модуля выбираются на 1-м курсе, третий — на втором. Если кто-то не смог попасть на интересный для него профессиональный модуль с первого раза, то есть еще одна попытка.</p>
+                    <p class="fade-in">Суммарно профессиональные модули занимают более трети всей образовательной программы. Остальное — обязательная для высококлассных ИТ-специалистов базовая часть.</p>  
+        </div>
+    </section>
+    <section id = "section3">
+        <div class = "main-text">
+        <h1 style="color: greenyellow;font-size: xx-large;">В каких областях ИТ можно прокачаться </h1>
+        </div>
+        <p style="font-size: x-large; color:white">Выберите 3 профессиональных модуля и </br> создайте свою профессию</p>
+        <div class ="fade-in">
+        <div class ="features-grid2">
+        <div class="feature2">
+            <h3>Компьютерная графика и иммерсивные технологии</h3>
+            <p>Технические среды компьютерного дизайна, методы обработки 2D- и 3D-графики. Обучение может проходить на базовом или углубленном уровне (длительность изучения удваивается).</p>
+        </div>
+        <div class="feature2">
+            <h3>Искусственный интеллект</h3>
+            <p>Использование, проектирование и программирование систем с искусственным интеллектом. В углубленном варианте изучается разработка нейронных сетей.</p>
+        </div>
+        <div class="feature2">
+            <h3>Распределенные системы</h3>
+            <p>Комплексная подготовка специалистов в DevOps и программировании распределенных и нагруженных систем. Может изучаться на базовом или углубленном уровне.</p>
+        </div>
+        <div class="feature2">
+            <h3>Системный анализ</h3>
+            <p>Методы выявления требований к новым программным и цифровым продуктам, реинжиниринг бизнес-процессов, проектирование информационных систем.</p>
+        </div>
+        <div class="feature2">
+            <h3>Базы данных</h3>
+            <p>Профессиональная организация и администрирование баз данных.В углубленном варианте осуществляется подготовка аналитиков данных.</p>
+        </div>
+        <div class="feature2">
+            <h3>Веб-технологии</h3>
+            <p>Дизайн и фуллстек-разработка интернет-сайтов и порталов. Может изучаться на базовом или углубленном уровне.</p>
+        </div>
+        <div class="feature2">
+            <h3>САПР</h3>
+            <p>Использование и программирование систем автоматизированного проектирования</p>
+        </div>
+        <div class="feature2">
+            <h3>Кроссплатформенная разработка</h3>
+            <p>Разработка прикладного программного обеспечения для разных платформ, в том числе и мобильных.</p>
+        </div>
+        <div class="feature2">
+            <h3>ERP-системы</h3>
+            <p>Проектирование, разработка и внедрение систем управления ресурсами организаций и производством.</p>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class = "section">
+    <div class="main-text">
+        <h1 style="font-size: xx-large;">Кем можно работать после обучения</h1>
+        </div>
+        <p style="font-size: x-large;padding: 30px;">Каждый профессиональный модуль – </br> востребованная ИТ-профессия</p>
+        <div class="features-grid3">
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?area=1&experience=between1And3&no_magic=true&only_with_salary=true&ored_clusters=true&text=%D0%98%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80+%D0%BF%D0%BE+%D0%A1%D0%90%D0%9F%D0%A0">Инженер по САПР</a>
+            <p>Определяет требования к системам автоматического проектирования с учетом особенностей производства, дорабатывает, формирует программу внедрения и цифровой трансформации организаций.</p>
+        </div>
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?text=Ux%2Fui+%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80&experience=between1And3&only_with_salary=true&area=1&hhtmFrom=vacancy_search_list&hhtmFromLabel=vacancy_search_line">UX/UI дизайнер и Frontend разработчик</a>
+            <p>Собирает функциональные требования от пользователей цифровых продуктов и полностью проектирует интерфейс. Разрабатывает клиентскую часть веб-сайтов на языке HTML/CSS, программирует на JavaScript, использует современные фреймворки</p>
+        </div>
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?text=3d+%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&salary=&ored_clusters=true&experience=between1And3&only_with_salary=true&area=1&hhtmFrom=vacancy_search_list&hhtmFromLabel=vacancy_search_line">3D-моделлер</a>
+            <p>Создает виртуальные копии объектов реального мира. Отлично владеет различными методиками разработки моделей, их анимации, создания реалистичности. Применяет технологии AR/VR. Иногда проектирует игры.</p>
+        </div>
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?text=%D0%92%D0%B5%D0%B1+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&salary=&ored_clusters=true&experience=between1And3&only_with_salary=true&area=1&hhtmFrom=vacancy_search_list&hhtmFromLabel=vacancy_search_line">Веб-разработчик</a>
+            <p>Программирует серверную часть веб-приложений, но может и сверстать клиентскую часть. Хорошо знает языки веб-разработки, использует фреймворки, может сам настроить веб-сервер.</p>
+        </div>
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?text=3d+%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&salary=&ored_clusters=true&experience=between1And3&only_with_salary=true&area=1&hhtmFrom=vacancy_search_list&hhtmFromLabel=vacancy_search_line">1С-программист</a>
+            <p>Проектирует и разрабатывает системы учета и управления различными организациями и предприятиями. Использует самую распространенную и востребованную платформу разработки в РФ.</p>
+        </div>
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?text=3d+%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&salary=&ored_clusters=true&experience=between1And3&only_with_salary=true&area=1&hhtmFrom=vacancy_search_list&hhtmFromLabel=vacancy_search_line">Аналитик данных</a>
+            <p>Собирает цифровые данные из разных источников, определяет метрики, которые могут помочь в выработке управленческих решений. Разрабатывает программы для обработки данных.</p>
+        </div>
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?text=3d+%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&salary=&ored_clusters=true&experience=between1And3&only_with_salary=true&area=1&hhtmFrom=vacancy_search_list&hhtmFromLabel=vacancy_search_line">Разработчик ИИ</a>
+            <p>Использует готовые библиотеки и сервисы для внедрения элементов искусственного интеллекта в различные системы. Опытные разработчики хорошо знают математику и проектируют нейросети самостоятельно.</p>
+        </div>
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?text=3d+%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&salary=&ored_clusters=true&experience=between1And3&only_with_salary=true&area=1&hhtmFrom=vacancy_search_list&hhtmFromLabel=vacancy_search_line">Разработчик мобильных приложений</a>
+            <p>Проектирует интерфейс, рисует его, программирует мобильную часть, связывает мобильные приложения с серверами и базами данных.</p>
+        </div>
+        <div class="feature3">
+            <a href="https://hh.ru/search/vacancy?text=3d+%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&salary=&ored_clusters=true&experience=between1And3&only_with_salary=true&area=1&hhtmFrom=vacancy_search_list&hhtmFromLabel=vacancy_search_line">Администратор базы данных</a>
+            <p>Оптимизирует структуру баз данных для их сохранности. Внедряет методы повышения скорости доступа к данным и их обработки. Администрирует сервера баз данных, но многое знает и в операционных системах.</p>
+        </div>
+    </div>
+    <h5 style="color:grey;text-align: center;">Указана ориентировочная заработная плата специалиста с опытом работы от 1 года по вакансиям сайта hh.ru<h5></h5>
+    </section>
+    <section>
+
+    </section>
+</body>
+</html>
